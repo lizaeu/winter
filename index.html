@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Winter Website</title>
+	<style> 
+    	body {
+        	height: 100vh; 
+            overflow: hidden; 
+            text-align: center; 
+            font-family: "Lucida Console";
+            background: #f7dcdd;
+        }
+        
+        img {
+        	width: 300px;
+            height: 300px;
+            
+        }
+        
+         button {
+        	width: 200px;
+            height: 30px;
+            background : #c2ab80;
+            animation-name : colorchange;
+            animation-duration : 5s;
+            animation-iteration-count: 50;
+        }
+        @keyframes colorchange {
+        	from {background : red;}
+            to {background : green;}
+        }
+        img:hover {
+        	-webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+   
+		.snowflake {
+			position: absolute; 
+        	font-size: 30px; 
+        	top: -30px;
+        	animation: fall linear infinite;
+    
+    	}
+    
+		@keyframes fall {
+        	0% {
+				transform: translateY(0);
+		 	}
+			100% {
+				transform: translateY(100vh);
+		}
+	}
+    
+	.snowflake:nth-child(1) {
+		left: 10%;
+        animation-duration: 7s;
+    }
+      
+	.snowflake:nth-child(2) {
+		left: 30%;
+        animation-duration: 5s;
+    }
+      
+	.snowflake:nth-child(3) {
+		left: 50%;
+        animation-duration: 3s;
+    }
+      
+	.snowflake:nth-child(4) {
+		left: 70%;
+        animation-duration: 6s;
+    }
+      
+	.snowflake:nth-child(5) {
+		left: 90%;
+        animation-duration: 4s;
+    }
+     
+	</style>
+</head>
+
+<body>
+	<div class="snowflake">❄</div>
+    <div class="snowflake">❄</div> 
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div> 
+    <div class="snowflake">❄</div>
+
+
+
+    <h1>MERRY CHRISTMAS!</h1>
+    <h2>This is my winter website!</h2>
+    <p>HOHOHOHO! Happy Holidays!</p>
+   <p> </p>
+    
+    <img src= "https://t3.ftcdn.net/jpg/05/36/47/00/360_F_536470050_tUPxa9YXhNClYHaCcYW25VC2K0l4y1kY.jpg">
+    
+    <p> Do you want to visit places during the chilly seasonto escape your boring hometown? </p>
+    <a href="https://travel.usnews.com/rankings/best-christmas-vacations/"> 
+    	<button>Best Christmas Vacation spots!</button>
+    </a>
+    
+  <p> HOHOHOHOHO! Did you know Christmas is one of the most widely known and celebrated holiday across the world? (google provided!) </p>
+   
+   <h2>Click that cool button to track Santa! </h2>
+    <a href="https://santatracker.google.com/"> 
+    	<button>Santa Tracker!</button>
+    </a>
+    
+
+</body>
+
+</html>
+
+
